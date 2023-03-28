@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=service-width, initial-scale=1.0">
+    <title>Primera plantilla 51325</title>
+</head>
+<body>
+    <h1>Primera plantilla</h1>
+    <p>Este es el contenido de la plantilla</p>
+    
+    <p style="color:red">Nombre= {{ nombre }}</p>
+    <p>Apellido= {{ apellido }}</p>
+    <p>Edad= {{ edad }}</p>
+    <p>Lista de notas</p>
+
+    <ul>
+        {% for nota in lista %}
+
+        {% if nota > 5 %}
+
+        <li style="color:green">NOTA APROBADA: {{ nota }}</li>
+
+        {% else %}
+
+        <li style="color:red">NOTA DESAPROBADA: {{ nota }}</li>
+
+        {% endif %}
+
+        {% endfor %}
+
+    </ul>
+</body>
+</html>
